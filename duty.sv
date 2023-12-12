@@ -16,8 +16,8 @@ module clock_d #(tp=10); //tp is time period
         $display("ton = %0d",ton);
         $display("toff = %0d",toff);
         
-        #ton; clk = 1'b0;
-        #toff; clk = 1'b1;
+        #toff; clk = 1'b0;
+        #ton; clk = 1'b1;
       end
 endmodule
 
